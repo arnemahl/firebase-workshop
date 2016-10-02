@@ -12,6 +12,6 @@ In this workshop we'll be focusing on the following Firebase features:
 
 ## Lessons
 
-1. [Getting started](lessons/getting_started.md)
-2. [Hosting](lessons/hosting.md)
+1. [Getting started](lessons/1_getting_started.md)
+2. [Hosting](lessons/2_hosting.md)
 3. TODO

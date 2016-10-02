@@ -1,4 +1,4 @@
-[Last: Getting Started](./getting_started.md)
+[Last: Getting Started](./1_getting_started.md)
 
 # Hosting
 
@@ -15,4 +15,4 @@
     - Find the url in your [Firebse console](https://console.firebase.google.com/), or just go to `your-project-name.firebaseapp.com` (Should work unless your-project-name was already taken).
     - This shows your newly deployed firebase app! If you didn't change the public/index.html file, the page is the default provided by firebase with some information about how to proceed.
 
-[Next: Clone Project](./clone_project.md)
+[Next: Clone Project](./3_clone_project.md)

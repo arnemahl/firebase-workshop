@@ -15,4 +15,4 @@
     - `$ firebase login`
 
 
-[Next: Hosting](./hosting.md)
+[Next: Hosting](./2_hosting.md)
