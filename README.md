@@ -14,4 +14,6 @@ In this workshop we'll be focusing on the following Firebase features:
 
 1. [Getting started](lessons/1_getting_started.md)
 2. [Hosting](lessons/2_hosting.md)
-3. TODO
+3. [Cloning this project](lessons/3_clone_project.md) so we can focus on Firebase
+4. [Adding Firebase to our web app](lessons/4_add_firebase_to_web_app.md)
+5. [Authentication](lessons/5_authentication.md)
