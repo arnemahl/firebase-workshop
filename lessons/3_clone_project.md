@@ -18,4 +18,5 @@ Now we'll change the frontend code. Since our focus is on Firebase, you can just
         * Tip: You can also run the buildt code with `$ firebase serve`, this is as close to seeing the deployed code as you'll get without actually deploying.
     3. Go check yout your app online, to see that it really worked :)
 
-[Next: Authentication](./4_authentication.md)
+[Next: Add Firebase to your web app](./3_clone_project.md)
+
