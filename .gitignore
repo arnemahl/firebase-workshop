@@ -1,1 +1,4 @@
-public/
+node_modules/
+public/main.js
+npm-debug.log
+firebase-debug.log

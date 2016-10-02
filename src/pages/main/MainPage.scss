@@ -1,0 +1,31 @@
+@import '../../styles/colors';
+
+@mixin fill-screen() {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+html,
+body {
+    @include fill-screen();
+}
+
+.page-main {
+    @include fill-screen();
+    text-align: center;
+
+    background-color: $fb-orange;
+
+    h1 {
+        margin: auto;
+        padding-top: 15vw;
+        font-size: 56px;
+    }
+
+    button {
+        margin: 20px auto;
+    }
+}
