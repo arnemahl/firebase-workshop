@@ -4,8 +4,16 @@ With Firebase it's easy to make a web-app that communicats with a database and u
 
 We'll write frontend code in JavaScript, using the frameworks [React](https://github.com/facebook/react) and [Pockito](https://github.com/arnemahl/pockito), but the main focus is on how we easily can use Firebase.
 
-The main features of this workshop are:
+In this workshop we'll be focusing on the following Firebase features:
 
 * [Firebase Hosting](https://firebase.google.com/docs/hosting/)
 * [Firebase Authentication](https://firebase.google.com/docs/auth/)
 * [Firebase Realtime Database](https://firebase.google.com/docs/database/) (this is the main part)
+
+## Lessons
+
+1. [Getting started](lessons/1_getting_started.md)
+2. [Hosting](lessons/2_hosting.md)
+3. [Cloning this project](lessons/3_clone_project.md) so we can focus on Firebase
+4. [Adding Firebase to our web app](lessons/4_add_firebase_to_web_app.md)
+5. [Authentication](lessons/5_authentication.md)
