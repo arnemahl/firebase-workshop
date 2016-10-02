@@ -1,0 +1,39 @@
+{
+  "name": "firebase-workshop",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "http-server -p 3000 .",
+    "build": "NODE_ENV=production webpack -p",
+    "hot": "webpack-dev-server --hot --progress --colors --inline"
+  },
+  "author": "Arne Mæhlum",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.3.3",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^5.0.0",
+    "css-loader": "^0.12.0",
+    "eslint": "^1.6.0",
+    "eslint-loader": "^1.0.0",
+    "eslint-plugin-babel": "^2.1.1",
+    "eslint-plugin-react": "^3.5.1",
+    "http-server": "^0.8.0",
+    "jsx-loader": "^0.13.2",
+    "node-libs-browser": "^0.5.0",
+    "node-sass": "^2.1.1",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^0.5.0",
+    "style-loader": "^0.12.2",
+    "webpack": "^1.9.5",
+    "webpack-dev-server": "^1.8.2"
+  },
+  "dependencies": {
+    "classnames": "^2.2.0",
+    "firebase": "^3.0.5",
+    "history": "^1.13.0",
+    "pockito": "^0.1.10",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-router": "^1.0.0-rc2"
+  }
+}

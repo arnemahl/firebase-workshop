@@ -1,0 +1,9 @@
+@import '../../styles/colors';
+
+input.our-fancy-input {
+    padding-top: 10px;
+    font-size: inherit;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 0px solid transparent;
+    border-bottom: 1px solid $fb-darker-blue;
+}
