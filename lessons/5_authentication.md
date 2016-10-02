@@ -1,4 +1,4 @@
-[Last: Add Firebase to your web app](./3_clone_project.md)
+[Last: Add Firebase to your web app](./4_add_firebase_to_web_app.md)
 
 # Authentication
 
