@@ -117,6 +117,23 @@ class LogInForm extends Component {
     }
 }
 
+FIREBASE_APP.auth().onAuthStateChanged((user) => {
+    if (!user) {
+        // Not logged in
+        store.set({
+            currentUserId: ''
+        });
+    }
+
+    // Logged in
+    const { uid } = user;
+
+    // Update currentUserId
+    store.set({
+        currentUserId: uid
+    });
+});
+
 export default class LoginPage extends Component {
 
     state = {
