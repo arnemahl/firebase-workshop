@@ -4,6 +4,8 @@ import store from 'store/Store';
 import Button from 'components/button/Button';
 import TextInput from 'components/text-input/TextInput';
 
+// import { FIREBASE_APP } from 'src/MyFirebase'; // TODO: Authentication: Uncomment this line
+
 import './LoginPage.scss';
 
 class AuthInput extends Component {
@@ -38,6 +40,8 @@ class CreateUserForm extends Component {
     onCreateUser = () => {
         const {email, password, passwordRepeat} = this.state;
 
+        // TODO: Authentication, create user:
+        // Write code to create a new user in your Firebase app here
         console.log('Create user:\n\temail:', email, '\n\tpassword:', password, '\n\tpasswordRepeat:', passwordRepeat);
     }
 
@@ -63,6 +67,8 @@ class LogInForm extends Component {
     onLogin = () => {
         const {email, password} = this.state;
 
+        // TODO: Authentication, log in
+        // Write code to log in to your Firebase app here
         console.log('Log in:\n\temail:', email, '\n\tpassword:', password);
     }
 
