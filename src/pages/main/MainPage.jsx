@@ -2,7 +2,7 @@ import React from 'react';
 
 import Button from 'components/button/Button';
 
-// import { FIREBASE_APP } from 'MyFirebase'; // TODO: Authentication: Uncomment this line
+import { FIREBASE_APP } from 'MyFirebase'; // TODO: Authentication: Uncomment this line
 
 import './MainPage.scss';
 
@@ -15,9 +15,15 @@ class MainPage extends React.Component {
     onLogOut = () => {
         // TODO: Authentication, log out
         // Write code to log out of your Firebse app here
-        this.setState({
-            logoutErrorMessage: 'Logout is not implemented'
-        });
+
+        const logoutSuccess = () => {
+            console.log('logged out');
+        };
+        const logoutError = (error) => {
+            this.setState({ logoutErrorMessage: error.message });
+        };
+
+        FIREBASE_APP.auth().signOut().then(logoutSuccess, logoutError);
     }
 
     render() {
