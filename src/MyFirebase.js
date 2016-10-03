@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-var config = {
+const config = {
     apiKey: "AIzaSyDnycLqte3CiINIbtyJPeiZph0V18hzF8k",
     authDomain: "iterate-workshop.firebaseapp.com",
     databaseURL: "https://iterate-workshop.firebaseio.com",

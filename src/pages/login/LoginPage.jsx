@@ -4,7 +4,7 @@ import store from 'store/Store';
 import Button from 'components/button/Button';
 import TextInput from 'components/text-input/TextInput';
 
-// import { FIREBASE_APP } from 'src/MyFirebase'; // TODO: Authentication: Uncomment this line
+// import { FIREBASE_APP } from 'MyFirebase'; // TODO: Authentication: Uncomment this line
 
 import './LoginPage.scss';
 
