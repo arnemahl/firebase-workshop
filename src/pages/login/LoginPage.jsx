@@ -94,8 +94,12 @@ class LogInForm extends Component {
 
         // TODO: Authentication, log in
         // Write code to log in to your Firebase app here
-        this.setState({
-            errorMessage: 'Login is not implemented!'
+
+        FIREBASE_APP.auth().signInWithEmailAndPassword(email, password).catch(error => {
+            // Not logged in
+            this.setState({
+                errorMessage: error.message
+            });
         });
     }
 
