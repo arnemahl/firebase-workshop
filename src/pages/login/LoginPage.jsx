@@ -4,7 +4,7 @@ import store from 'store/Store';
 import Button from 'components/button/Button';
 import TextInput from 'components/text-input/TextInput';
 
-// import { FIREBASE_APP } from 'MyFirebase'; // TODO: Authentication: Uncomment this line
+import { FIREBASE_APP } from 'MyFirebase'; // TODO: Authentication: Uncomment this line
 
 import './LoginPage.scss';
 
@@ -48,8 +48,17 @@ class CreateUserForm extends Component {
 
         // TODO: Authentication, create user:
         // Write code to create a new user in your Firebase app here
-        this.setState({
-            errorMessage: 'Create user is not implemented!'
+
+        if (password !== passwordRepeat) {
+            this.setState({
+                errorMessage: "The passwords don't match"
+            });
+            return;
+        }
+
+        FIREBASE_APP.auth().createUserWithEmailAndPassword(email, password).catch(error => {
+            // Failed to create user
+            this.setState({ errorMessage: error.message });
         });
     }
 
