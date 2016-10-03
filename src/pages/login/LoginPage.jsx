@@ -33,6 +33,10 @@ class AuthInput extends Component {
 
 class CreateUserForm extends Component {
 
+    state = {
+        errorMessage: ''
+    }
+
     componentWillMount() {
         store.auth.listenWhileMounted(this, ['email', 'password', 'passwordRepeat']);
     }
@@ -40,9 +44,13 @@ class CreateUserForm extends Component {
     onCreateUser = () => {
         const {email, password, passwordRepeat} = this.state;
 
+        console.log('Create user:\n\temail:', email, '\n\tpassword:', password, '\n\tpasswordRepeat:', passwordRepeat);
+
         // TODO: Authentication, create user:
         // Write code to create a new user in your Firebase app here
-        console.log('Create user:\n\temail:', email, '\n\tpassword:', password, '\n\tpasswordRepeat:', passwordRepeat);
+        this.setState({
+            errorMessage: 'Create user is not implemented!'
+        });
     }
 
     render() {
@@ -53,12 +61,18 @@ class CreateUserForm extends Component {
                 <AuthInput field="password" label="Password" type="password" />
                 <AuthInput field="passwordRepeat" label="Repeat password" type="password" />
                 <Button onClick={this.onCreateUser}>Create user</Button>
+
+                <div className="error-message">{this.state.errorMessage}</div>
             </form>
         );
     }
 }
 
 class LogInForm extends Component {
+
+    state = {
+        errorMessage: ''
+    }
 
     componentWillMount() {
         store.auth.listenWhileMounted(this, ['email', 'password']);
@@ -67,9 +81,13 @@ class LogInForm extends Component {
     onLogin = () => {
         const {email, password} = this.state;
 
+        console.log('Log in:\n\temail:', email, '\n\tpassword:', password);
+
         // TODO: Authentication, log in
         // Write code to log in to your Firebase app here
-        console.log('Log in:\n\temail:', email, '\n\tpassword:', password);
+        this.setState({
+            errorMessage: 'Login is not implemented!'
+        });
     }
 
     render() {
@@ -79,6 +97,8 @@ class LogInForm extends Component {
                 <AuthInput field="email" label="E-mail" type="text" />
                 <AuthInput field="password" label="Password" type="password" />
                 <Button onClick={this.onLogin}>Log in</Button>
+
+                <div className="error-message">{this.state.errorMessage}</div>
             </form>
         );
     }
