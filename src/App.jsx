@@ -18,7 +18,7 @@ class App extends React.Component {
 
         if (!currentUserId) {
             if (window.location.hash !== '#/login') {
-                window.location.hash = 'login';
+                window.location.hash = '/login';
             }
         } else {
             if (window.location.hash === '#/login') {
