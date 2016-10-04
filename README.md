@@ -17,3 +17,4 @@ In this workshop we'll be focusing on the following Firebase features:
 3. [Cloning this project](lessons/3_clone_project.md) so we can focus on Firebase
 4. [Adding Firebase to our web app](lessons/4_add_firebase_to_web_app.md)
 5. [Authentication](lessons/5_authentication.md)
+6. [Realtime Database](lessons/6_realtime_database.md)
