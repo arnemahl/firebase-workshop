@@ -1,7 +1,7 @@
 # Getting Started
 
 1. LOG IN
-    1. Go to [console.firebase.google.com](console.firebase.google.com)
+    1. Go to [console.firebase.google.com](https://console.firebase.google.com)
     1. Log in or create user
 
 2. CREATE NEW PROJECT
